@@ -12,18 +12,21 @@ const hamburger = {
 	}
 };
 
-const newRestaurant = {...hamburger.maker.restaurant};
-newRestaurant.name = "Hyur's II";
-newRestaurant.address = "Second Street, 12";
+const newRestaurant = {...hamburger.maker.restaurant}; // copia solo il restaurant
+newRestaurant.name = "Hyur's II";  // hamburger.maker.restaurant.name
+newRestaurant.address = "Second Street, 12";  // hamburger.maker.restaurant.address
+		
+
 const secondBurger = {...hamburger};
 secondBurger.maker.restaurant = newRestaurant;
 secondBurger.maker.name = "Chef Hyur";
 
-console.log(hamburger.maker.name); // ?
-console.log(secondBurger.maker.name); // ?
-console.log(hamburger.maker.restaurant.name); // ?
-console.log(secondBurger.maker.restaurant.name); // ?
-
-
 // Senza lanciare il codice, riesci a prevedere cosa viene stampato in console?
+console.log(hamburger.maker.name); // Chef Hyur
+console.log(secondBurger.maker.name); // Chef Hyur
+console.log(hamburger.maker.restaurant.name); // Hyur's II
+console.log(secondBurger.maker.restaurant.name); // Hyur's II
+
+
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+// 5 oggetti: hamburger, hamburger.maker, hamburger.maker.restaurant, newRestaurant, secondBurger
