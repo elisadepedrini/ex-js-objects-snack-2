@@ -19,4 +19,9 @@ const restaurant = {
 
 
 // Qual è il metodo migliore per clonare l’oggetto chef, e perché?
+// Tramite l'operatore spread, perchè non abbiamo proprietà annidate e abbiamo una funzione, che l'operatore spread può copiare
+// const secondChef = {...chef}
+
 // Qual è il metodo migliore per clonare l’oggetto restaurant, e perché?
+// Tramite la copia profonda con structuredClone, perchè abbiamo proprietà annidate e un oggetto complesso (Date); inoltre non abbiamo funzioni da dover copiare
+// const secondRestaurant = structuredClone(restaurant)
