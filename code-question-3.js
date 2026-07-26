@@ -17,3 +17,4 @@ const thirdBurger = structuredClone(hamburger);
 
 
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+// 3 oggetti, in quanto structureClone fa una copia profonda dell'oggetto, compreso di oggetti annidati
