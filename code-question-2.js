@@ -14,5 +14,8 @@ console.log(secondBurger.ingredients[0]); // Salad
 // P.S.: Ricordati che gli Array, come gli oggetti, sono dei Reference Type (Tipi di Riferimento)!
 
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
-// 2 oggetti, in quanto secondBurger non fa riferimento all'oggetto burger, ma crea un nuovo oggetto, uguale, utilizzando l'operatore spread
+// 3 oggetti, in quanto secondBurger non fa riferimento all'oggetto burger, ma crea un nuovo oggetto, uguale, utilizzando l'operatore spread:
+// hamburger
+// hamburger.ingredients
+// secondBurger
 
