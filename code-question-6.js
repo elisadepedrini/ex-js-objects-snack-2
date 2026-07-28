@@ -22,3 +22,13 @@ const chef = {
 
 
 // Qual è il metodo migliore per clonare l’oggetto chef, e perché?
+// Il metodo migliore è lo spread nidificato, perchè l'unico metodo che permette di copiare un oggetto che include delle funzioni
+// const newChef = {
+	// ...chef,
+		// restaurant : {
+		// ...chef.restaurant,
+			// address: {
+			// ...chef.restaurant.address
+			// }
+		// }
+// }
